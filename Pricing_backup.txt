@@ -1,0 +1,1747 @@
+import React, {
+  useEffect,
+  useState,
+} from "react";
+
+import DashboardLayout from "../components/DashboardLayout";
+
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  CartesianGrid,
+} from "recharts";
+
+import {
+  getProducts,
+} from "../utils/productStorage";
+
+import {
+  getAIPricePrediction,
+} from "../utils/pricingApi";
+
+
+function Pricing() {
+
+  const [products, setProducts] = useState([]);
+
+  const [recommendations, setRecommendations] = useState([]);
+
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
+
+  const [hasAnalyzed, setHasAnalyzed] = useState(false);
+
+  const [productSearch, setProductSearch] = useState("");
+
+  const [selectedProduct, setSelectedProduct] =
+    useState(null);
+
+
+  /* ============================================================
+     LOAD PRODUCTS
+  ============================================================ */
+
+  useEffect(() => {
+
+    loadProducts();
+
+  }, []);
+
+
+  const loadProducts = () => {
+
+    const data = getProducts();
+
+    setProducts(
+      Array.isArray(data)
+        ? data
+        : []
+    );
+
+  };
+
+
+  /* ============================================================
+     GET CURRENT PRICE
+  ============================================================ */
+
+  const getCurrentPrice = (product) => {
+
+    return Number(
+      product.currentPrice ??
+      product.price ??
+      0
+    );
+
+  };
+
+
+  /* ============================================================
+     FORMAT PRICE
+  ============================================================ */
+
+  const formatPrice = (value) => {
+
+    return Number(value || 0).toLocaleString(
+      "en-IN"
+    );
+
+  };
+
+
+  /* ============================================================
+     REAL AI PRICING ANALYSIS
+
+     IMPORTANT:
+
+     This function sends ALL 30 products to the
+     FastAPI Random Forest model.
+
+     FastAPI:
+     http://127.0.0.1:8001/predict
+  ============================================================ */
+
+  const runPricingAnalysis = async () => {
+
+    const data = getProducts();
+
+
+    if (!data.length) {
+
+      alert(
+        "Add products first."
+      );
+
+      return;
+
+    }
+
+
+    setIsAnalyzing(true);
+
+
+    try {
+
+      /*
+       * ==========================================================
+       * SEND ALL PRODUCTS TO REAL AI MODEL
+       * ==========================================================
+       */
+
+      const result = await Promise.all(
+
+        data.map(
+          async (product) => {
+
+            const current =
+              Number(
+                product.currentPrice ??
+                product.price ??
+                0
+              );
+
+
+            const competitorPrice =
+              Number(
+                product.competitorPrice ??
+                current
+              );
+
+
+            const stock =
+              Number(
+                product.stock ??
+                0
+              );
+
+
+            const sales =
+              Number(
+                product.sales ??
+                0
+              );
+
+
+            const lastMonthSales =
+              Number(
+                product.lastMonthSales ??
+                0
+              );
+
+
+            const demand =
+              product.demand ??
+              "Moderate";
+
+
+            /*
+             * ====================================================
+             * SEND PRODUCT TO FASTAPI
+             * ====================================================
+             */
+
+            console.log(
+              "Sending product to AI:",
+              product.name
+            );
+
+
+            const prediction =
+              await getAIPricePrediction({
+
+                currentPrice:
+                  current,
+
+                competitorPrice:
+                  competitorPrice,
+
+                stock:
+                  stock,
+
+                sales:
+                  sales,
+
+                lastMonthSales:
+                  lastMonthSales,
+
+                demand:
+                  demand,
+
+              });
+
+
+            console.log(
+              "AI prediction:",
+              product.name,
+              prediction
+            );
+
+
+            /*
+             * ====================================================
+             * GET AI RECOMMENDED PRICE
+             * ====================================================
+             */
+
+            const recommended =
+              Number(
+                prediction.aiRecommendedPrice
+              );
+
+
+            /*
+             * ====================================================
+             * PRICE CHANGE %
+             * ====================================================
+             */
+
+            const difference =
+              Number(
+                prediction.priceChangePercentage ??
+                (
+                  current > 0
+
+                    ? (
+                        (
+                          recommended -
+                          current
+                        ) /
+                        current
+                      ) * 100
+
+                    : 0
+                )
+              );
+
+
+            /*
+             * ====================================================
+             * RETURN RESULT
+             * ====================================================
+             */
+
+            return {
+
+              id:
+                product.id,
+
+              name:
+                product.name,
+
+              current:
+                current,
+
+              recommended:
+                recommended,
+
+              change:
+                difference,
+
+              type:
+
+                recommended > current
+
+                  ? "increase"
+
+                  : recommended < current
+
+                    ? "decrease"
+
+                    : "stable",
+
+              demand:
+                demand,
+
+              competitorPrice:
+                competitorPrice,
+
+              stock:
+                stock,
+
+              sales:
+                sales,
+
+              lastMonthSales:
+                lastMonthSales,
+
+            };
+
+          }
+        )
+
+      );
+
+
+      /*
+       * ==========================================================
+       * SAVE REAL AI RESULTS
+       * ==========================================================
+       */
+
+      console.log(
+        "ALL AI RESULTS:",
+        result
+      );
+
+
+      setRecommendations(
+        result
+      );
+
+
+      setHasAnalyzed(
+        true
+      );
+
+
+      setProductSearch("");
+
+      setSelectedProduct(
+        null
+      );
+
+    }
+
+
+    catch (error) {
+
+      console.error(
+        "AI Pricing Analysis Error:",
+        error
+      );
+
+
+      alert(
+        "AI pricing analysis failed. Please make sure the FastAPI AI server is running on port 8001."
+      );
+
+    }
+
+
+    finally {
+
+      setIsAnalyzing(
+        false
+      );
+
+    }
+
+  };
+
+
+  /* ============================================================
+     SEARCH PRODUCTS
+  ============================================================ */
+
+  const searchedProducts =
+    recommendations.filter(
+
+      (product) =>
+
+        product.name
+          ?.toLowerCase()
+          .includes(
+            productSearch
+              .trim()
+              .toLowerCase()
+          )
+
+    );
+
+
+  /* ============================================================
+     SELECT PRODUCT
+  ============================================================ */
+
+  const handleProductSelection = (
+    product
+  ) => {
+
+    setSelectedProduct(
+      product
+    );
+
+    setProductSearch(
+      product.name
+    );
+
+  };
+
+
+  /* ============================================================
+     AI EXPLANATION
+  ============================================================ */
+
+  const getAIExplanation = (
+    product
+  ) => {
+
+    if (!product) {
+
+      return "";
+
+    }
+
+
+    const demand =
+      (
+        product.demand ||
+        ""
+      ).toLowerCase();
+
+
+    const current =
+      Number(
+        product.current ||
+        0
+      );
+
+
+    const recommended =
+      Number(
+        product.recommended ||
+        0
+      );
+
+
+    /*
+     * STABLE
+     */
+
+    if (
+      Math.abs(
+        recommended -
+        current
+      ) < 1
+    ) {
+
+      return (
+        "The current price is closely aligned with the AI recommendation. No significant adjustment is required."
+      );
+
+    }
+
+
+    /*
+     * INCREASE
+     */
+
+    if (
+      recommended >
+      current
+    ) {
+
+      if (
+        demand.includes(
+          "very high"
+        ) ||
+        demand.includes(
+          "high"
+        )
+      ) {
+
+        return (
+          "High demand is supporting a higher recommended price. The AI model suggests increasing the price while maintaining the current demand opportunity."
+        );
+
+      }
+
+
+      return (
+        "The AI pricing analysis indicates an opportunity to increase the current price based on the available product and demand signals."
+      );
+
+    }
+
+
+    /*
+     * DECREASE
+     */
+
+    if (
+      recommended <
+      current
+    ) {
+
+      if (
+        demand.includes(
+          "low"
+        )
+      ) {
+
+        return (
+          "Lower demand suggests price sensitivity. The AI model recommends reducing the price to improve the product's pricing position."
+        );
+
+      }
+
+
+      return (
+        "The AI pricing analysis indicates that a lower price may improve the product's pricing position based on the available demand signals."
+      );
+
+    }
+
+
+    return (
+      "The AI model has analyzed the product's current pricing and demand signals."
+    );
+
+  };
+
+
+  /* ============================================================
+     CHART DATA
+  ============================================================ */
+
+  const chartData =
+    recommendations.map(
+      (item) => ({
+
+        name:
+          item.name,
+
+        Current:
+          item.current,
+
+        Recommended:
+          item.recommended,
+
+      })
+    );
+
+
+  /* ============================================================
+     RENDER
+  ============================================================ */
+
+  return (
+
+    <DashboardLayout>
+
+      <div className="page-container">
+
+
+        {/* =====================================================
+            PAGE HEADER
+        ===================================================== */}
+
+        <div
+          className="page-header"
+        >
+
+          <div>
+
+            <p className="section-label">
+
+              AI PRICING
+
+            </p>
+
+
+            <h1>
+
+              Dynamic Pricing
+
+            </h1>
+
+
+            <p
+              style={{
+                marginTop: "6px",
+                color:
+                  "var(--text-secondary)",
+              }}
+            >
+
+              Use AI-powered pricing
+              recommendations based on
+              product demand, sales,
+              stock and competitor prices.
+
+            </p>
+
+          </div>
+
+
+          {/* ===================================================
+              RUN AI BUTTON
+          =================================================== */}
+
+          <button
+
+            type="button"
+
+            className="primary-button"
+
+            onClick={
+              runPricingAnalysis
+            }
+
+            disabled={
+              isAnalyzing
+            }
+
+          >
+
+            {isAnalyzing
+
+              ? "Analyzing 30 Products..."
+
+              : "Run AI Pricing Analysis"
+
+            }
+
+          </button>
+
+
+        </div>
+
+
+        {/* =====================================================
+            AI STATUS
+        ===================================================== */}
+
+        <div
+          className="chart-card"
+          style={{
+            marginBottom: "24px",
+          }}
+        >
+
+          <div
+            style={{
+              display: "flex",
+              justifyContent:
+                "space-between",
+              alignItems:
+                "center",
+              gap: "15px",
+              flexWrap:
+                "wrap",
+            }}
+          >
+
+            <div>
+
+              <p className="section-label">
+
+                AI MODEL
+
+              </p>
+
+
+              <h2>
+
+                Random Forest Regressor
+
+              </h2>
+
+
+              <p
+                style={{
+                  marginTop: "6px",
+                  color:
+                    "var(--text-secondary)",
+                }}
+              >
+
+                Real-time predictions
+                generated by the
+                FastAPI AI model.
+
+              </p>
+
+            </div>
+
+
+            <div
+              className="ai-badge"
+            >
+
+              ✦ AI CONNECTED
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* =====================================================
+            PRODUCT AI ANALYSIS
+        ===================================================== */}
+
+        {
+
+          hasAnalyzed &&
+
+          <div className="chart-card">
+
+
+            <div
+              style={{
+                marginBottom: "18px",
+              }}
+            >
+
+              <p
+                className="section-label"
+                style={{
+                  marginBottom: "6px",
+                }}
+              >
+
+                PRODUCT AI ANALYSIS
+
+              </p>
+
+
+              <h2>
+
+                Check AI Prediction for a Product
+
+              </h2>
+
+
+              <p
+                style={{
+                  marginTop: "6px",
+                  color:
+                    "var(--text-secondary)",
+                }}
+              >
+
+                Search for a product to view its
+                current price, AI recommended price,
+                demand, and pricing recommendation.
+
+              </p>
+
+            </div>
+
+
+            {/* =================================================
+                SEARCH
+            ================================================= */}
+
+            <div
+              className="catalog-toolbar"
+            >
+
+              <input
+
+                type="text"
+
+                placeholder="Search product e.g. shoes..."
+
+                value={
+                  productSearch
+                }
+
+                onChange={(e) => {
+
+                  setProductSearch(
+                    e.target.value
+                  );
+
+                  setSelectedProduct(
+                    null
+                  );
+
+                }}
+
+              />
+
+            </div>
+
+
+            {/* =================================================
+                SEARCH RESULTS
+            ================================================= */}
+
+            {
+
+              productSearch.trim() &&
+
+              !selectedProduct &&
+
+              <div
+                style={{
+                  marginTop: "14px",
+                }}
+              >
+
+                {
+
+                  searchedProducts.length >
+
+                  0
+
+                    ?
+
+                  <div
+                    className="recommendation-grid"
+                  >
+
+                    {
+
+                      searchedProducts.map(
+                        (product) => (
+
+                          <button
+
+                            type="button"
+
+                            key={
+                              product.id
+                            }
+
+                            onClick={() =>
+                              handleProductSelection(
+                                product
+                              )
+                            }
+
+                            style={{
+                              textAlign:
+                                "left",
+
+                              cursor:
+                                "pointer",
+
+                              border:
+                                "1px solid var(--border)",
+
+                              background:
+                                "#ffffff",
+
+                              borderRadius:
+                                "var(--radius-md)",
+
+                              padding:
+                                "20px",
+
+                              transition:
+                                "var(--transition)",
+
+                            }}
+
+                          >
+
+                            <h3>
+
+                              {
+                                product.name
+                              }
+
+                            </h3>
+
+
+                            <p
+                              style={{
+                                marginTop:
+                                  "8px",
+                              }}
+                            >
+
+                              Current: ₹
+
+                              {
+                                formatPrice(
+                                  product.current
+                                )
+                              }
+
+                            </p>
+
+
+                            <p
+                              style={{
+                                marginTop:
+                                  "5px",
+                              }}
+                            >
+
+                              AI Recommended: ₹
+
+                              {
+                                formatPrice(
+                                  product.recommended
+                                )
+                              }
+
+                            </p>
+
+
+                            <span
+                              className="demand-badge"
+                              style={{
+                                marginTop:
+                                  "10px",
+                              }}
+                            >
+
+                              {
+                                product.demand
+                              }
+
+                            </span>
+
+                          </button>
+
+                        )
+                      )
+
+                    }
+
+                  </div>
+
+                    :
+
+                  <div
+                    className="empty-state"
+                  >
+
+                    <h3>
+
+                      No Product Found
+
+                    </h3>
+
+
+                    <p>
+
+                      Try searching with
+                      another product name.
+
+                    </p>
+
+                  </div>
+
+                }
+
+              </div>
+
+            }
+
+
+            {/* =================================================
+                SELECTED PRODUCT
+            ================================================= */}
+
+            {
+
+              selectedProduct &&
+
+              (() => {
+
+                const difference =
+
+                  selectedProduct.recommended -
+
+                  selectedProduct.current;
+
+
+                const percentage =
+
+                  selectedProduct.current > 0
+
+                    ?
+
+                  (
+                    difference /
+                    selectedProduct.current
+                  ) * 100
+
+                    :
+
+                  0;
+
+
+                return (
+
+                  <div
+                    className="recommendation-card"
+                    style={{
+                      marginTop:
+                        "22px",
+
+                      borderColor:
+                        "#ddd7ff",
+                    }}
+                  >
+
+
+                    {/* HEADER */}
+
+                    <div
+                      style={{
+                        display:
+                          "flex",
+
+                        alignItems:
+                          "center",
+
+                        justifyContent:
+                          "space-between",
+
+                        gap:
+                          "15px",
+
+                        flexWrap:
+                          "wrap",
+                      }}
+                    >
+
+                      <div>
+
+                        <p
+                          className="section-label"
+                          style={{
+                            marginBottom:
+                              "5px",
+                          }}
+                        >
+
+                          AI PRICING PREDICTION
+
+                        </p>
+
+
+                        <h3
+                          style={{
+                            fontSize:
+                              "20px",
+                          }}
+                        >
+
+                          {
+                            selectedProduct.name
+                          }
+
+                        </h3>
+
+                      </div>
+
+
+                      <span
+                        className="ai-badge"
+                      >
+
+                        ✦ AI ANALYSIS
+
+                      </span>
+
+                    </div>
+
+
+                    {/* PRICE INFORMATION */}
+
+                    <div
+                      className="stats-grid"
+                      style={{
+                        marginTop:
+                          "22px",
+
+                        marginBottom:
+                          "0",
+                      }}
+                    >
+
+
+                      <div
+                        className="stat-card"
+                      >
+
+                        <span>
+                          Current Price
+                        </span>
+
+                        <h2>
+
+                          ₹
+
+                          {
+                            formatPrice(
+                              selectedProduct.current
+                            )
+                          }
+
+                        </h2>
+
+                      </div>
+
+
+                      <div
+                        className="stat-card"
+                      >
+
+                        <span>
+                          AI Recommended Price
+                        </span>
+
+                        <h2>
+
+                          ₹
+
+                          {
+                            formatPrice(
+                              selectedProduct.recommended
+                            )
+                          }
+
+                        </h2>
+
+                      </div>
+
+
+                      <div
+                        className="stat-card"
+                      >
+
+                        <span>
+                          Price Difference
+                        </span>
+
+                        <h2
+
+                          className={
+
+                            difference > 0
+
+                              ?
+
+                            "positive-number"
+
+                              :
+
+                            difference < 0
+
+                              ?
+
+                            "negative-number"
+
+                              :
+
+                            ""
+
+                          }
+                        >
+
+                          {
+                            difference > 0
+                              ? "+"
+                              : ""
+                          }
+
+                          ₹
+
+                          {
+                            formatPrice(
+                              Math.abs(
+                                difference
+                              )
+                            )
+                          }
+
+                        </h2>
+
+                      </div>
+
+
+                      <div
+                        className="stat-card"
+                      >
+
+                        <span>
+                          Percentage Change
+                        </span>
+
+                        <h2
+
+                          className={
+
+                            percentage > 0
+
+                              ?
+
+                            "positive-number"
+
+                              :
+
+                            percentage < 0
+
+                              ?
+
+                            "negative-number"
+
+                              :
+
+                            ""
+
+                          }
+                        >
+
+                          {
+                            percentage > 0
+                              ? "+"
+                              : ""
+                          }
+
+                          {
+                            percentage.toFixed(
+                              1
+                            )
+                          }%
+
+                        </h2>
+
+                      </div>
+
+
+                    </div>
+
+
+                    {/* DEMAND + RECOMMENDATION */}
+
+                    <div
+                      style={{
+                        display:
+                          "grid",
+
+                        gridTemplateColumns:
+                          "repeat(auto-fit, minmax(220px, 1fr))",
+
+                        gap:
+                          "18px",
+
+                        marginTop:
+                          "20px",
+                      }}
+                    >
+
+
+                      {/* DEMAND */}
+
+                      <div
+                        style={{
+                          padding:
+                            "18px",
+
+                          border:
+                            "1px solid var(--border)",
+
+                          borderRadius:
+                            "var(--radius-md)",
+
+                          background:
+                            "#ffffff",
+                        }}
+                      >
+
+                        <span
+                          style={{
+                            display:
+                              "block",
+
+                            fontSize:
+                              "12px",
+
+                            color:
+                              "var(--text-secondary)",
+
+                            marginBottom:
+                              "8px",
+                          }}
+                        >
+
+                          DEMAND LEVEL
+
+                        </span>
+
+
+                        <strong
+                          style={{
+                            fontSize:
+                              "16px",
+                          }}
+                        >
+
+                          🔥{" "}
+
+                          {
+                            selectedProduct.demand ||
+                            "Moderate"
+                          }
+
+                        </strong>
+
+                      </div>
+
+
+                      {/* RECOMMENDATION */}
+
+                      <div
+                        style={{
+                          padding:
+                            "18px",
+
+                          border:
+                            "1px solid var(--border)",
+
+                          borderRadius:
+                            "var(--radius-md)",
+
+                          background:
+                            "#ffffff",
+                        }}
+                      >
+
+                        <span
+                          style={{
+                            display:
+                              "block",
+
+                            fontSize:
+                              "12px",
+
+                            color:
+                              "var(--text-secondary)",
+
+                            marginBottom:
+                              "8px",
+                          }}
+                        >
+
+                          AI RECOMMENDATION
+
+                        </span>
+
+
+                        <div
+
+                          className={
+
+                            selectedProduct.type ===
+                            "increase"
+
+                              ?
+
+                            "price-change positive"
+
+                              :
+
+                            selectedProduct.type ===
+                            "decrease"
+
+                              ?
+
+                            "price-change negative"
+
+                              :
+
+                            "price-change neutral"
+
+                          }
+                        >
+
+                          {
+
+                            selectedProduct.type ===
+                            "increase"
+
+                              ?
+
+                            "↑ Increase Price"
+
+                              :
+
+                            selectedProduct.type ===
+                            "decrease"
+
+                              ?
+
+                            "↓ Decrease Price"
+
+                              :
+
+                            "✓ Keep Price Stable"
+
+                          }
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                    {/* AI EXPLANATION */}
+
+                    <div
+                      style={{
+                        marginTop:
+                          "20px",
+
+                        padding:
+                          "18px",
+
+                        borderRadius:
+                          "var(--radius-md)",
+
+                        background:
+                          "var(--primary-light)",
+
+                        border:
+                          "1px solid #ddd7ff",
+                      }}
+                    >
+
+                      <span
+                        style={{
+                          display:
+                            "block",
+
+                          fontSize:
+                            "12px",
+
+                          fontWeight:
+                            700,
+
+                          color:
+                            "var(--primary)",
+
+                          marginBottom:
+                            "8px",
+
+                          letterSpacing:
+                            "0.4px",
+                        }}
+                      >
+
+                        ✦ AI EXPLANATION
+
+                      </span>
+
+
+                      <p
+                        style={{
+                          lineHeight:
+                            "1.6",
+
+                          color:
+                            "var(--text-secondary)",
+                        }}
+                      >
+
+                        {
+                          getAIExplanation(
+                            selectedProduct
+                          )
+                        }
+
+                      </p>
+
+                    </div>
+
+
+                  </div>
+
+                );
+
+              })()
+
+            }
+
+          </div>
+
+        }
+
+
+        {/* =====================================================
+            PRICE COMPARISON
+        ===================================================== */}
+
+        <div
+          className="chart-card"
+        >
+
+          <h2>
+
+            Price Comparison
+
+          </h2>
+
+
+          {
+
+            hasAnalyzed &&
+
+            chartData.length > 0
+
+              ?
+
+            <ResponsiveContainer
+              width="100%"
+              height={320}
+            >
+
+              <BarChart
+                data={
+                  chartData
+                }
+              >
+
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                />
+
+                <XAxis
+                  dataKey="name"
+                />
+
+                <YAxis />
+
+                <Tooltip />
+
+                <Bar
+                  dataKey="Current"
+                  fill="#94a3b8"
+                />
+
+                <Bar
+                  dataKey="Recommended"
+                  fill="#7c3aed"
+                />
+
+              </BarChart>
+
+            </ResponsiveContainer>
+
+              :
+
+            <div
+              className="empty-state"
+            >
+
+              <h3>
+
+                Run AI Pricing Analysis
+
+              </h3>
+
+
+              <p>
+
+                AI recommendations
+                will appear here.
+
+              </p>
+
+            </div>
+
+          }
+
+        </div>
+
+
+        {/* =====================================================
+            AI RECOMMENDATIONS
+        ===================================================== */}
+
+        <div
+          className="chart-card"
+        >
+
+          <h2>
+
+            AI Recommendations
+
+          </h2>
+
+
+          <div
+            className="recommendation-grid"
+          >
+
+            {
+
+              recommendations.map(
+                (item) => (
+
+                  <div
+
+                    className="recommendation-card"
+
+                    key={
+                      item.id
+                    }
+                  >
+
+                    <h3>
+
+                      {
+                        item.name
+                      }
+
+                    </h3>
+
+
+                    <p>
+
+                      Current:
+
+                      ₹{" "}
+
+                      {
+                        formatPrice(
+                          item.current
+                        )
+                      }
+
+                    </p>
+
+
+                    <p>
+
+                      Recommended:
+
+                      ₹{" "}
+
+                      {
+                        formatPrice(
+                          item.recommended
+                        )
+                      }
+
+                    </p>
+
+
+                    <div
+
+                      className={
+
+                        item.type ===
+                        "increase"
+
+                          ?
+
+                        "price-change positive"
+
+                          :
+
+                        item.type ===
+                        "decrease"
+
+                          ?
+
+                        "price-change negative"
+
+                          :
+
+                        "price-change neutral"
+
+                      }
+                    >
+
+                      {
+
+                        item.change > 0
+
+                          ?
+
+                        "↑ Increase "
+
+                          :
+
+                        item.change < 0
+
+                          ?
+
+                        "↓ Decrease "
+
+                          :
+
+                        "No Change "
+
+                      }
+
+
+                      {
+
+                        Math.abs(
+                          item.change
+                        ).toFixed(
+                          1
+                        )
+
+                      }%
+
+                    </div>
+
+                  </div>
+
+                )
+              )
+
+            }
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </DashboardLayout>
+
+  );
+
+}
+
+
+export default Pricing;
