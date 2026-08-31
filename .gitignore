@@ -1,22 +1,2 @@
-# Python
-.venv/
-__pycache__/
-*.py[cod]
-
-# Environment variables
-.env
-.env.*
-
-# Node
-node_modules/
-dist/
-
-# Logs
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
