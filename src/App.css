@@ -1,0 +1,20 @@
+/* =========================================================
+   PRICEPILOT AI
+   APP LEVEL STYLES
+========================================================= */
+
+/* 
+   Main application layout is controlled by index.css.
+
+   Do not add:
+   position: fixed;
+   margin-left;
+   width: calc(100% - 240px);
+
+   to the sidebar or dashboard main area.
+*/
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
