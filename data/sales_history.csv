@@ -1,0 +1,541 @@
+date,product_id,product_name,category,sales
+2025-01,1,Premium Wireless Headphones,Electronics,110
+2025-02,1,Premium Wireless Headphones,Electronics,107
+2025-03,1,Premium Wireless Headphones,Electronics,118
+2025-04,1,Premium Wireless Headphones,Electronics,131
+2025-05,1,Premium Wireless Headphones,Electronics,118
+2025-06,1,Premium Wireless Headphones,Electronics,119
+2025-07,1,Premium Wireless Headphones,Electronics,126
+2025-08,1,Premium Wireless Headphones,Electronics,121
+2025-09,1,Premium Wireless Headphones,Electronics,112
+2025-10,1,Premium Wireless Headphones,Electronics,138
+2025-11,1,Premium Wireless Headphones,Electronics,130
+2025-12,1,Premium Wireless Headphones,Electronics,130
+2026-01,1,Premium Wireless Headphones,Electronics,113
+2026-02,1,Premium Wireless Headphones,Electronics,99
+2026-03,1,Premium Wireless Headphones,Electronics,106
+2026-04,1,Premium Wireless Headphones,Electronics,120
+2026-05,1,Premium Wireless Headphones,Electronics,117
+2026-06,1,Premium Wireless Headphones,Electronics,127
+2025-01,2,Smart Watch Pro,Smart Devices,74
+2025-02,2,Smart Watch Pro,Smart Devices,72
+2025-03,2,Smart Watch Pro,Smart Devices,91
+2025-04,2,Smart Watch Pro,Smart Devices,87
+2025-05,2,Smart Watch Pro,Smart Devices,88
+2025-06,2,Smart Watch Pro,Smart Devices,81
+2025-07,2,Smart Watch Pro,Smart Devices,82
+2025-08,2,Smart Watch Pro,Smart Devices,85
+2025-09,2,Smart Watch Pro,Smart Devices,79
+2025-10,2,Smart Watch Pro,Smart Devices,100
+2025-11,2,Smart Watch Pro,Smart Devices,95
+2025-12,2,Smart Watch Pro,Smart Devices,97
+2026-01,2,Smart Watch Pro,Smart Devices,79
+2026-02,2,Smart Watch Pro,Smart Devices,91
+2026-03,2,Smart Watch Pro,Smart Devices,86
+2026-04,2,Smart Watch Pro,Smart Devices,85
+2026-05,2,Smart Watch Pro,Smart Devices,96
+2026-06,2,Smart Watch Pro,Smart Devices,85
+2025-01,3,Premium Running Shoes,Fashion,131
+2025-02,3,Premium Running Shoes,Fashion,115
+2025-03,3,Premium Running Shoes,Fashion,126
+2025-04,3,Premium Running Shoes,Fashion,146
+2025-05,3,Premium Running Shoes,Fashion,151
+2025-06,3,Premium Running Shoes,Fashion,147
+2025-07,3,Premium Running Shoes,Fashion,138
+2025-08,3,Premium Running Shoes,Fashion,137
+2025-09,3,Premium Running Shoes,Fashion,127
+2025-10,3,Premium Running Shoes,Fashion,154
+2025-11,3,Premium Running Shoes,Fashion,157
+2025-12,3,Premium Running Shoes,Fashion,172
+2026-01,3,Premium Running Shoes,Fashion,137
+2026-02,3,Premium Running Shoes,Fashion,120
+2026-03,3,Premium Running Shoes,Fashion,145
+2026-04,3,Premium Running Shoes,Fashion,146
+2026-05,3,Premium Running Shoes,Fashion,144
+2026-06,3,Premium Running Shoes,Fashion,156
+2025-01,4,Modern Coffee Maker,Home Appliances,61
+2025-02,4,Modern Coffee Maker,Home Appliances,61
+2025-03,4,Modern Coffee Maker,Home Appliances,57
+2025-04,4,Modern Coffee Maker,Home Appliances,63
+2025-05,4,Modern Coffee Maker,Home Appliances,65
+2025-06,4,Modern Coffee Maker,Home Appliances,68
+2025-07,4,Modern Coffee Maker,Home Appliances,59
+2025-08,4,Modern Coffee Maker,Home Appliances,61
+2025-09,4,Modern Coffee Maker,Home Appliances,58
+2025-10,4,Modern Coffee Maker,Home Appliances,66
+2025-11,4,Modern Coffee Maker,Home Appliances,75
+2025-12,4,Modern Coffee Maker,Home Appliances,77
+2026-01,4,Modern Coffee Maker,Home Appliances,59
+2026-02,4,Modern Coffee Maker,Home Appliances,63
+2026-03,4,Modern Coffee Maker,Home Appliances,64
+2026-04,4,Modern Coffee Maker,Home Appliances,64
+2026-05,4,Modern Coffee Maker,Home Appliances,68
+2026-06,4,Modern Coffee Maker,Home Appliances,73
+2025-01,5,Ergonomic Office Chair,Furniture,42
+2025-02,5,Ergonomic Office Chair,Furniture,46
+2025-03,5,Ergonomic Office Chair,Furniture,38
+2025-04,5,Ergonomic Office Chair,Furniture,49
+2025-05,5,Ergonomic Office Chair,Furniture,47
+2025-06,5,Ergonomic Office Chair,Furniture,46
+2025-07,5,Ergonomic Office Chair,Furniture,45
+2025-08,5,Ergonomic Office Chair,Furniture,40
+2025-09,5,Ergonomic Office Chair,Furniture,45
+2025-10,5,Ergonomic Office Chair,Furniture,54
+2025-11,5,Ergonomic Office Chair,Furniture,57
+2025-12,5,Ergonomic Office Chair,Furniture,51
+2026-01,5,Ergonomic Office Chair,Furniture,42
+2026-02,5,Ergonomic Office Chair,Furniture,43
+2026-03,5,Ergonomic Office Chair,Furniture,49
+2026-04,5,Ergonomic Office Chair,Furniture,50
+2026-05,5,Ergonomic Office Chair,Furniture,47
+2026-06,5,Ergonomic Office Chair,Furniture,51
+2025-01,6,Premium Travel Backpack,Accessories,86
+2025-02,6,Premium Travel Backpack,Accessories,91
+2025-03,6,Premium Travel Backpack,Accessories,87
+2025-04,6,Premium Travel Backpack,Accessories,94
+2025-05,6,Premium Travel Backpack,Accessories,94
+2025-06,6,Premium Travel Backpack,Accessories,88
+2025-07,6,Premium Travel Backpack,Accessories,94
+2025-08,6,Premium Travel Backpack,Accessories,94
+2025-09,6,Premium Travel Backpack,Accessories,93
+2025-10,6,Premium Travel Backpack,Accessories,105
+2025-11,6,Premium Travel Backpack,Accessories,98
+2025-12,6,Premium Travel Backpack,Accessories,105
+2026-01,6,Premium Travel Backpack,Accessories,87
+2026-02,6,Premium Travel Backpack,Accessories,85
+2026-03,6,Premium Travel Backpack,Accessories,93
+2026-04,6,Premium Travel Backpack,Accessories,102
+2026-05,6,Premium Travel Backpack,Accessories,111
+2026-06,6,Premium Travel Backpack,Accessories,101
+2025-01,7,Bluetooth Speaker,Electronics,102
+2025-02,7,Bluetooth Speaker,Electronics,101
+2025-03,7,Bluetooth Speaker,Electronics,95
+2025-04,7,Bluetooth Speaker,Electronics,112
+2025-05,7,Bluetooth Speaker,Electronics,113
+2025-06,7,Bluetooth Speaker,Electronics,130
+2025-07,7,Bluetooth Speaker,Electronics,107
+2025-08,7,Bluetooth Speaker,Electronics,111
+2025-09,7,Bluetooth Speaker,Electronics,109
+2025-10,7,Bluetooth Speaker,Electronics,117
+2025-11,7,Bluetooth Speaker,Electronics,135
+2025-12,7,Bluetooth Speaker,Electronics,132
+2026-01,7,Bluetooth Speaker,Electronics,110
+2026-02,7,Bluetooth Speaker,Electronics,99
+2026-03,7,Bluetooth Speaker,Electronics,120
+2026-04,7,Bluetooth Speaker,Electronics,107
+2026-05,7,Bluetooth Speaker,Electronics,121
+2026-06,7,Bluetooth Speaker,Electronics,133
+2025-01,8,Gaming Mouse,Electronics,168
+2025-02,8,Gaming Mouse,Electronics,173
+2025-03,8,Gaming Mouse,Electronics,191
+2025-04,8,Gaming Mouse,Electronics,194
+2025-05,8,Gaming Mouse,Electronics,182
+2025-06,8,Gaming Mouse,Electronics,202
+2025-07,8,Gaming Mouse,Electronics,180
+2025-08,8,Gaming Mouse,Electronics,198
+2025-09,8,Gaming Mouse,Electronics,182
+2025-10,8,Gaming Mouse,Electronics,243
+2025-11,8,Gaming Mouse,Electronics,213
+2025-12,8,Gaming Mouse,Electronics,220
+2026-01,8,Gaming Mouse,Electronics,195
+2026-02,8,Gaming Mouse,Electronics,172
+2026-03,8,Gaming Mouse,Electronics,199
+2026-04,8,Gaming Mouse,Electronics,223
+2026-05,8,Gaming Mouse,Electronics,188
+2026-06,8,Gaming Mouse,Electronics,210
+2025-01,9,Mechanical Keyboard,Electronics,80
+2025-02,9,Mechanical Keyboard,Electronics,83
+2025-03,9,Mechanical Keyboard,Electronics,77
+2025-04,9,Mechanical Keyboard,Electronics,81
+2025-05,9,Mechanical Keyboard,Electronics,91
+2025-06,9,Mechanical Keyboard,Electronics,90
+2025-07,9,Mechanical Keyboard,Electronics,86
+2025-08,9,Mechanical Keyboard,Electronics,86
+2025-09,9,Mechanical Keyboard,Electronics,81
+2025-10,9,Mechanical Keyboard,Electronics,99
+2025-11,9,Mechanical Keyboard,Electronics,100
+2025-12,9,Mechanical Keyboard,Electronics,94
+2026-01,9,Mechanical Keyboard,Electronics,91
+2026-02,9,Mechanical Keyboard,Electronics,84
+2026-03,9,Mechanical Keyboard,Electronics,80
+2026-04,9,Mechanical Keyboard,Electronics,95
+2026-05,9,Mechanical Keyboard,Electronics,86
+2026-06,9,Mechanical Keyboard,Electronics,96
+2025-01,10,Laptop Backpack,Accessories,98
+2025-02,10,Laptop Backpack,Accessories,88
+2025-03,10,Laptop Backpack,Accessories,103
+2025-04,10,Laptop Backpack,Accessories,105
+2025-05,10,Laptop Backpack,Accessories,108
+2025-06,10,Laptop Backpack,Accessories,115
+2025-07,10,Laptop Backpack,Accessories,97
+2025-08,10,Laptop Backpack,Accessories,95
+2025-09,10,Laptop Backpack,Accessories,94
+2025-10,10,Laptop Backpack,Accessories,109
+2025-11,10,Laptop Backpack,Accessories,114
+2025-12,10,Laptop Backpack,Accessories,118
+2026-01,10,Laptop Backpack,Accessories,97
+2026-02,10,Laptop Backpack,Accessories,101
+2026-03,10,Laptop Backpack,Accessories,101
+2026-04,10,Laptop Backpack,Accessories,116
+2026-05,10,Laptop Backpack,Accessories,105
+2026-06,10,Laptop Backpack,Accessories,125
+2025-01,11,Air Fryer,Home Appliances,69
+2025-02,11,Air Fryer,Home Appliances,63
+2025-03,11,Air Fryer,Home Appliances,66
+2025-04,11,Air Fryer,Home Appliances,76
+2025-05,11,Air Fryer,Home Appliances,73
+2025-06,11,Air Fryer,Home Appliances,77
+2025-07,11,Air Fryer,Home Appliances,73
+2025-08,11,Air Fryer,Home Appliances,71
+2025-09,11,Air Fryer,Home Appliances,68
+2025-10,11,Air Fryer,Home Appliances,75
+2025-11,11,Air Fryer,Home Appliances,80
+2025-12,11,Air Fryer,Home Appliances,87
+2026-01,11,Air Fryer,Home Appliances,70
+2026-02,11,Air Fryer,Home Appliances,64
+2026-03,11,Air Fryer,Home Appliances,73
+2026-04,11,Air Fryer,Home Appliances,78
+2026-05,11,Air Fryer,Home Appliances,73
+2026-06,11,Air Fryer,Home Appliances,78
+2025-01,12,LED Desk Lamp,Furniture,127
+2025-02,12,LED Desk Lamp,Furniture,118
+2025-03,12,LED Desk Lamp,Furniture,136
+2025-04,12,LED Desk Lamp,Furniture,145
+2025-05,12,LED Desk Lamp,Furniture,150
+2025-06,12,LED Desk Lamp,Furniture,150
+2025-07,12,LED Desk Lamp,Furniture,124
+2025-08,12,LED Desk Lamp,Furniture,128
+2025-09,12,LED Desk Lamp,Furniture,140
+2025-10,12,LED Desk Lamp,Furniture,162
+2025-11,12,LED Desk Lamp,Furniture,162
+2025-12,12,LED Desk Lamp,Furniture,194
+2026-01,12,LED Desk Lamp,Furniture,135
+2026-02,12,LED Desk Lamp,Furniture,140
+2026-03,12,LED Desk Lamp,Furniture,146
+2026-04,12,LED Desk Lamp,Furniture,151
+2026-05,12,LED Desk Lamp,Furniture,143
+2026-06,12,LED Desk Lamp,Furniture,153
+2025-01,13,Yoga Mat,Sports,163
+2025-02,13,Yoga Mat,Sports,169
+2025-03,13,Yoga Mat,Sports,175
+2025-04,13,Yoga Mat,Sports,191
+2025-05,13,Yoga Mat,Sports,217
+2025-06,13,Yoga Mat,Sports,170
+2025-07,13,Yoga Mat,Sports,190
+2025-08,13,Yoga Mat,Sports,166
+2025-09,13,Yoga Mat,Sports,179
+2025-10,13,Yoga Mat,Sports,226
+2025-11,13,Yoga Mat,Sports,214
+2025-12,13,Yoga Mat,Sports,200
+2026-01,13,Yoga Mat,Sports,169
+2026-02,13,Yoga Mat,Sports,185
+2026-03,13,Yoga Mat,Sports,179
+2026-04,13,Yoga Mat,Sports,200
+2026-05,13,Yoga Mat,Sports,198
+2026-06,13,Yoga Mat,Sports,191
+2025-01,14,Cricket Bat,Sports,74
+2025-02,14,Cricket Bat,Sports,68
+2025-03,14,Cricket Bat,Sports,61
+2025-04,14,Cricket Bat,Sports,74
+2025-05,14,Cricket Bat,Sports,70
+2025-06,14,Cricket Bat,Sports,77
+2025-07,14,Cricket Bat,Sports,67
+2025-08,14,Cricket Bat,Sports,70
+2025-09,14,Cricket Bat,Sports,73
+2025-10,14,Cricket Bat,Sports,86
+2025-11,14,Cricket Bat,Sports,76
+2025-12,14,Cricket Bat,Sports,80
+2026-01,14,Cricket Bat,Sports,66
+2026-02,14,Cricket Bat,Sports,65
+2026-03,14,Cricket Bat,Sports,79
+2026-04,14,Cricket Bat,Sports,78
+2026-05,14,Cricket Bat,Sports,70
+2026-06,14,Cricket Bat,Sports,80
+2025-01,15,Wireless Charger,Electronics,138
+2025-02,15,Wireless Charger,Electronics,130
+2025-03,15,Wireless Charger,Electronics,118
+2025-04,15,Wireless Charger,Electronics,132
+2025-05,15,Wireless Charger,Electronics,147
+2025-06,15,Wireless Charger,Electronics,131
+2025-07,15,Wireless Charger,Electronics,134
+2025-08,15,Wireless Charger,Electronics,138
+2025-09,15,Wireless Charger,Electronics,124
+2025-10,15,Wireless Charger,Electronics,151
+2025-11,15,Wireless Charger,Electronics,123
+2025-12,15,Wireless Charger,Electronics,144
+2026-01,15,Wireless Charger,Electronics,125
+2026-02,15,Wireless Charger,Electronics,118
+2026-03,15,Wireless Charger,Electronics,147
+2026-04,15,Wireless Charger,Electronics,129
+2026-05,15,Wireless Charger,Electronics,138
+2026-06,15,Wireless Charger,Electronics,143
+2025-01,16,Fitness Band,Smart Devices,120
+2025-02,16,Fitness Band,Smart Devices,101
+2025-03,16,Fitness Band,Smart Devices,125
+2025-04,16,Fitness Band,Smart Devices,123
+2025-05,16,Fitness Band,Smart Devices,116
+2025-06,16,Fitness Band,Smart Devices,128
+2025-07,16,Fitness Band,Smart Devices,120
+2025-08,16,Fitness Band,Smart Devices,115
+2025-09,16,Fitness Band,Smart Devices,120
+2025-10,16,Fitness Band,Smart Devices,134
+2025-11,16,Fitness Band,Smart Devices,139
+2025-12,16,Fitness Band,Smart Devices,144
+2026-01,16,Fitness Band,Smart Devices,126
+2026-02,16,Fitness Band,Smart Devices,106
+2026-03,16,Fitness Band,Smart Devices,137
+2026-04,16,Fitness Band,Smart Devices,113
+2026-05,16,Fitness Band,Smart Devices,127
+2026-06,16,Fitness Band,Smart Devices,133
+2025-01,17,Portable SSD,Electronics,58
+2025-02,17,Portable SSD,Electronics,55
+2025-03,17,Portable SSD,Electronics,60
+2025-04,17,Portable SSD,Electronics,62
+2025-05,17,Portable SSD,Electronics,62
+2025-06,17,Portable SSD,Electronics,68
+2025-07,17,Portable SSD,Electronics,63
+2025-08,17,Portable SSD,Electronics,59
+2025-09,17,Portable SSD,Electronics,65
+2025-10,17,Portable SSD,Electronics,73
+2025-11,17,Portable SSD,Electronics,75
+2025-12,17,Portable SSD,Electronics,74
+2026-01,17,Portable SSD,Electronics,56
+2026-02,17,Portable SSD,Electronics,58
+2026-03,17,Portable SSD,Electronics,66
+2026-04,17,Portable SSD,Electronics,69
+2026-05,17,Portable SSD,Electronics,66
+2026-06,17,Portable SSD,Electronics,67
+2025-01,18,Water Bottle,Accessories,93
+2025-02,18,Water Bottle,Accessories,84
+2025-03,18,Water Bottle,Accessories,95
+2025-04,18,Water Bottle,Accessories,96
+2025-05,18,Water Bottle,Accessories,96
+2025-06,18,Water Bottle,Accessories,104
+2025-07,18,Water Bottle,Accessories,98
+2025-08,18,Water Bottle,Accessories,98
+2025-09,18,Water Bottle,Accessories,101
+2025-10,18,Water Bottle,Accessories,108
+2025-11,18,Water Bottle,Accessories,113
+2025-12,18,Water Bottle,Accessories,106
+2026-01,18,Water Bottle,Accessories,92
+2026-02,18,Water Bottle,Accessories,89
+2026-03,18,Water Bottle,Accessories,96
+2026-04,18,Water Bottle,Accessories,104
+2026-05,18,Water Bottle,Accessories,96
+2026-06,18,Water Bottle,Accessories,114
+2025-01,19,Office Table,Furniture,21
+2025-02,19,Office Table,Furniture,21
+2025-03,19,Office Table,Furniture,25
+2025-04,19,Office Table,Furniture,26
+2025-05,19,Office Table,Furniture,26
+2025-06,19,Office Table,Furniture,26
+2025-07,19,Office Table,Furniture,24
+2025-08,19,Office Table,Furniture,23
+2025-09,19,Office Table,Furniture,24
+2025-10,19,Office Table,Furniture,27
+2025-11,19,Office Table,Furniture,30
+2025-12,19,Office Table,Furniture,28
+2026-01,19,Office Table,Furniture,22
+2026-02,19,Office Table,Furniture,23
+2026-03,19,Office Table,Furniture,25
+2026-04,19,Office Table,Furniture,25
+2026-05,19,Office Table,Furniture,25
+2026-06,19,Office Table,Furniture,26
+2025-01,20,Noise Cancelling Earbuds,Electronics,134
+2025-02,20,Noise Cancelling Earbuds,Electronics,128
+2025-03,20,Noise Cancelling Earbuds,Electronics,135
+2025-04,20,Noise Cancelling Earbuds,Electronics,149
+2025-05,20,Noise Cancelling Earbuds,Electronics,134
+2025-06,20,Noise Cancelling Earbuds,Electronics,135
+2025-07,20,Noise Cancelling Earbuds,Electronics,135
+2025-08,20,Noise Cancelling Earbuds,Electronics,140
+2025-09,20,Noise Cancelling Earbuds,Electronics,145
+2025-10,20,Noise Cancelling Earbuds,Electronics,178
+2025-11,20,Noise Cancelling Earbuds,Electronics,173
+2025-12,20,Noise Cancelling Earbuds,Electronics,163
+2026-01,20,Noise Cancelling Earbuds,Electronics,136
+2026-02,20,Noise Cancelling Earbuds,Electronics,129
+2026-03,20,Noise Cancelling Earbuds,Electronics,144
+2026-04,20,Noise Cancelling Earbuds,Electronics,150
+2026-05,20,Noise Cancelling Earbuds,Electronics,156
+2026-06,20,Noise Cancelling Earbuds,Electronics,146
+2025-01,21,Digital Camera,Electronics,13
+2025-02,21,Digital Camera,Electronics,14
+2025-03,21,Digital Camera,Electronics,13
+2025-04,21,Digital Camera,Electronics,14
+2025-05,21,Digital Camera,Electronics,15
+2025-06,21,Digital Camera,Electronics,14
+2025-07,21,Digital Camera,Electronics,14
+2025-08,21,Digital Camera,Electronics,14
+2025-09,21,Digital Camera,Electronics,14
+2025-10,21,Digital Camera,Electronics,15
+2025-11,21,Digital Camera,Electronics,16
+2025-12,21,Digital Camera,Electronics,16
+2026-01,21,Digital Camera,Electronics,14
+2026-02,21,Digital Camera,Electronics,14
+2026-03,21,Digital Camera,Electronics,16
+2026-04,21,Digital Camera,Electronics,14
+2026-05,21,Digital Camera,Electronics,15
+2026-06,21,Digital Camera,Electronics,15
+2025-01,22,Smart TV 43 Inch,Electronics,28
+2025-02,22,Smart TV 43 Inch,Electronics,23
+2025-03,22,Smart TV 43 Inch,Electronics,25
+2025-04,22,Smart TV 43 Inch,Electronics,26
+2025-05,22,Smart TV 43 Inch,Electronics,24
+2025-06,22,Smart TV 43 Inch,Electronics,27
+2025-07,22,Smart TV 43 Inch,Electronics,25
+2025-08,22,Smart TV 43 Inch,Electronics,26
+2025-09,22,Smart TV 43 Inch,Electronics,27
+2025-10,22,Smart TV 43 Inch,Electronics,34
+2025-11,22,Smart TV 43 Inch,Electronics,32
+2025-12,22,Smart TV 43 Inch,Electronics,29
+2026-01,22,Smart TV 43 Inch,Electronics,24
+2026-02,22,Smart TV 43 Inch,Electronics,26
+2026-03,22,Smart TV 43 Inch,Electronics,25
+2026-04,22,Smart TV 43 Inch,Electronics,31
+2026-05,22,Smart TV 43 Inch,Electronics,30
+2026-06,22,Smart TV 43 Inch,Electronics,28
+2025-01,23,Mixer Grinder,Home Appliances,47
+2025-02,23,Mixer Grinder,Home Appliances,57
+2025-03,23,Mixer Grinder,Home Appliances,55
+2025-04,23,Mixer Grinder,Home Appliances,63
+2025-05,23,Mixer Grinder,Home Appliances,53
+2025-06,23,Mixer Grinder,Home Appliances,57
+2025-07,23,Mixer Grinder,Home Appliances,56
+2025-08,23,Mixer Grinder,Home Appliances,57
+2025-09,23,Mixer Grinder,Home Appliances,55
+2025-10,23,Mixer Grinder,Home Appliances,68
+2025-11,23,Mixer Grinder,Home Appliances,61
+2025-12,23,Mixer Grinder,Home Appliances,65
+2026-01,23,Mixer Grinder,Home Appliances,55
+2026-02,23,Mixer Grinder,Home Appliances,56
+2026-03,23,Mixer Grinder,Home Appliances,60
+2026-04,23,Mixer Grinder,Home Appliances,57
+2026-05,23,Mixer Grinder,Home Appliances,55
+2026-06,23,Mixer Grinder,Home Appliances,66
+2025-01,24,Electric Kettle,Home Appliances,109
+2025-02,24,Electric Kettle,Home Appliances,102
+2025-03,24,Electric Kettle,Home Appliances,123
+2025-04,24,Electric Kettle,Home Appliances,120
+2025-05,24,Electric Kettle,Home Appliances,128
+2025-06,24,Electric Kettle,Home Appliances,120
+2025-07,24,Electric Kettle,Home Appliances,128
+2025-08,24,Electric Kettle,Home Appliances,127
+2025-09,24,Electric Kettle,Home Appliances,113
+2025-10,24,Electric Kettle,Home Appliances,140
+2025-11,24,Electric Kettle,Home Appliances,138
+2025-12,24,Electric Kettle,Home Appliances,144
+2026-01,24,Electric Kettle,Home Appliances,104
+2026-02,24,Electric Kettle,Home Appliances,115
+2026-03,24,Electric Kettle,Home Appliances,124
+2026-04,24,Electric Kettle,Home Appliances,110
+2026-05,24,Electric Kettle,Home Appliances,115
+2026-06,24,Electric Kettle,Home Appliances,109
+2025-01,25,Microwave Oven,Home Appliances,31
+2025-02,25,Microwave Oven,Home Appliances,33
+2025-03,25,Microwave Oven,Home Appliances,36
+2025-04,25,Microwave Oven,Home Appliances,35
+2025-05,25,Microwave Oven,Home Appliances,39
+2025-06,25,Microwave Oven,Home Appliances,33
+2025-07,25,Microwave Oven,Home Appliances,30
+2025-08,25,Microwave Oven,Home Appliances,34
+2025-09,25,Microwave Oven,Home Appliances,35
+2025-10,25,Microwave Oven,Home Appliances,39
+2025-11,25,Microwave Oven,Home Appliances,35
+2025-12,25,Microwave Oven,Home Appliances,39
+2026-01,25,Microwave Oven,Home Appliances,30
+2026-02,25,Microwave Oven,Home Appliances,34
+2026-03,25,Microwave Oven,Home Appliances,35
+2026-04,25,Microwave Oven,Home Appliances,34
+2026-05,25,Microwave Oven,Home Appliances,36
+2026-06,25,Microwave Oven,Home Appliances,34
+2025-01,26,Casual Shoes,Fashion,94
+2025-02,26,Casual Shoes,Fashion,100
+2025-03,26,Casual Shoes,Fashion,94
+2025-04,26,Casual Shoes,Fashion,108
+2025-05,26,Casual Shoes,Fashion,102
+2025-06,26,Casual Shoes,Fashion,100
+2025-07,26,Casual Shoes,Fashion,100
+2025-08,26,Casual Shoes,Fashion,95
+2025-09,26,Casual Shoes,Fashion,98
+2025-10,26,Casual Shoes,Fashion,108
+2025-11,26,Casual Shoes,Fashion,131
+2025-12,26,Casual Shoes,Fashion,118
+2026-01,26,Casual Shoes,Fashion,93
+2026-02,26,Casual Shoes,Fashion,99
+2026-03,26,Casual Shoes,Fashion,102
+2026-04,26,Casual Shoes,Fashion,107
+2026-05,26,Casual Shoes,Fashion,113
+2026-06,26,Casual Shoes,Fashion,114
+2025-01,27,Leather Wallet,Fashion,76
+2025-02,27,Leather Wallet,Fashion,76
+2025-03,27,Leather Wallet,Fashion,82
+2025-04,27,Leather Wallet,Fashion,76
+2025-05,27,Leather Wallet,Fashion,80
+2025-06,27,Leather Wallet,Fashion,96
+2025-07,27,Leather Wallet,Fashion,93
+2025-08,27,Leather Wallet,Fashion,83
+2025-09,27,Leather Wallet,Fashion,88
+2025-10,27,Leather Wallet,Fashion,100
+2025-11,27,Leather Wallet,Fashion,116
+2025-12,27,Leather Wallet,Fashion,105
+2026-01,27,Leather Wallet,Fashion,81
+2026-02,27,Leather Wallet,Fashion,77
+2026-03,27,Leather Wallet,Fashion,78
+2026-04,27,Leather Wallet,Fashion,92
+2026-05,27,Leather Wallet,Fashion,87
+2026-06,27,Leather Wallet,Fashion,84
+2025-01,28,Men's Jacket,Fashion,66
+2025-02,28,Men's Jacket,Fashion,65
+2025-03,28,Men's Jacket,Fashion,80
+2025-04,28,Men's Jacket,Fashion,81
+2025-05,28,Men's Jacket,Fashion,77
+2025-06,28,Men's Jacket,Fashion,84
+2025-07,28,Men's Jacket,Fashion,74
+2025-08,28,Men's Jacket,Fashion,70
+2025-09,28,Men's Jacket,Fashion,81
+2025-10,28,Men's Jacket,Fashion,88
+2025-11,28,Men's Jacket,Fashion,80
+2025-12,28,Men's Jacket,Fashion,85
+2026-01,28,Men's Jacket,Fashion,68
+2026-02,28,Men's Jacket,Fashion,66
+2026-03,28,Men's Jacket,Fashion,80
+2026-04,28,Men's Jacket,Fashion,89
+2026-05,28,Men's Jacket,Fashion,73
+2026-06,28,Men's Jacket,Fashion,83
+2025-01,29,Sunglasses,Fashion,86
+2025-02,29,Sunglasses,Fashion,87
+2025-03,29,Sunglasses,Fashion,91
+2025-04,29,Sunglasses,Fashion,94
+2025-05,29,Sunglasses,Fashion,100
+2025-06,29,Sunglasses,Fashion,95
+2025-07,29,Sunglasses,Fashion,97
+2025-08,29,Sunglasses,Fashion,96
+2025-09,29,Sunglasses,Fashion,95
+2025-10,29,Sunglasses,Fashion,105
+2025-11,29,Sunglasses,Fashion,107
+2025-12,29,Sunglasses,Fashion,117
+2026-01,29,Sunglasses,Fashion,95
+2026-02,29,Sunglasses,Fashion,87
+2026-03,29,Sunglasses,Fashion,98
+2026-04,29,Sunglasses,Fashion,108
+2026-05,29,Sunglasses,Fashion,93
+2026-06,29,Sunglasses,Fashion,107
+2025-01,30,Travel Suitcase,Accessories,45
+2025-02,30,Travel Suitcase,Accessories,48
+2025-03,30,Travel Suitcase,Accessories,47
+2025-04,30,Travel Suitcase,Accessories,46
+2025-05,30,Travel Suitcase,Accessories,47
+2025-06,30,Travel Suitcase,Accessories,52
+2025-07,30,Travel Suitcase,Accessories,51
+2025-08,30,Travel Suitcase,Accessories,47
+2025-09,30,Travel Suitcase,Accessories,52
+2025-10,30,Travel Suitcase,Accessories,52
+2025-11,30,Travel Suitcase,Accessories,58
+2025-12,30,Travel Suitcase,Accessories,54
+2026-01,30,Travel Suitcase,Accessories,46
+2026-02,30,Travel Suitcase,Accessories,48
+2026-03,30,Travel Suitcase,Accessories,48
+2026-04,30,Travel Suitcase,Accessories,52
+2026-05,30,Travel Suitcase,Accessories,57
+2026-06,30,Travel Suitcase,Accessories,52

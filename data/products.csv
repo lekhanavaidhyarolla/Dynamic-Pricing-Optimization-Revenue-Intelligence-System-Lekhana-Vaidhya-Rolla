@@ -1,0 +1,31 @@
+id,name,category,currentPrice,demand,stock,competitorPrice,sales,lastMonthSales
+1,Premium Wireless Headphones,Electronics,2499,High,80,2699,120,110
+2,Smart Watch Pro,Smart Devices,3999,Moderate,55,3899,82,90
+3,Premium Running Shoes,Fashion,2999,Very High,40,3199,150,125
+4,Modern Coffee Maker,Home Appliances,4599,Moderate,70,4499,63,60
+5,Ergonomic Office Chair,Furniture,8999,High,25,9499,48,42
+6,Premium Travel Backpack,Accessories,1999,Moderate,90,1899,96,88
+7,Bluetooth Speaker,Electronics,1799,High,75,1899,112,105
+8,Gaming Mouse,Electronics,1299,Very High,120,1399,200,184
+9,Mechanical Keyboard,Electronics,3499,High,60,3599,88,81
+10,Laptop Backpack,Accessories,1499,Moderate,95,1599,102,96
+11,Air Fryer,Home Appliances,5999,High,50,6199,74,68
+12,LED Desk Lamp,Furniture,999,Moderate,130,1099,140,131
+13,Yoga Mat,Sports,799,Very High,140,899,190,176
+14,Cricket Bat,Sports,2499,High,65,2599,72,69
+15,Wireless Charger,Electronics,899,Moderate,110,999,135,128
+16,Fitness Band,Smart Devices,2299,High,85,2399,122,116
+17,Portable SSD,Electronics,5499,High,42,5699,64,59
+18,Water Bottle,Accessories,499,Low,180,549,95,92
+19,Office Table,Furniture,12999,Moderate,18,13299,25,23
+20,Noise Cancelling Earbuds,Electronics,4999,Very High,58,5199,146,137
+21,Digital Camera,Electronics,45999,Moderate,12,46999,14,13
+22,Smart TV 43 Inch,Electronics,32999,High,20,33999,28,24
+23,Mixer Grinder,Home Appliances,3499,Moderate,60,3599,58,55
+24,Electric Kettle,Home Appliances,1599,High,92,1699,118,111
+25,Microwave Oven,Home Appliances,8999,Moderate,28,9299,35,33
+26,Casual Shoes,Fashion,2199,Moderate,88,2299,104,98
+27,Leather Wallet,Fashion,999,Low,145,1099,86,84
+28,Men's Jacket,Fashion,3499,High,54,3599,76,72
+29,Sunglasses,Fashion,1799,High,77,1899,98,94
+30,Travel Suitcase,Accessories,4999,Moderate,48,5199,51,49

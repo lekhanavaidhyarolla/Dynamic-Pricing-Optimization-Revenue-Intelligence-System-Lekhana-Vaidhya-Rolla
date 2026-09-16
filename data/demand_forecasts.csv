@@ -1,0 +1,361 @@
+date,product_id,product_name,category,forecast_horizon,forecast_sales,confidence_score,currentPrice,stock,competitorPrice
+2026-07,1,Premium Wireless Headphones,Electronics,Short-term,122,93.98,2499,80,2699
+2026-08,1,Premium Wireless Headphones,Electronics,Short-term,120,92.93,2499,80,2699
+2026-09,1,Premium Wireless Headphones,Electronics,Short-term,125,92.26,2499,80,2699
+2026-10,1,Premium Wireless Headphones,Electronics,Medium-term,132,93.93,2499,80,2699
+2026-11,1,Premium Wireless Headphones,Electronics,Medium-term,135,93.66,2499,80,2699
+2026-12,1,Premium Wireless Headphones,Electronics,Medium-term,144,94.13,2499,80,2699
+2027-01,1,Premium Wireless Headphones,Electronics,Long-term,119,89.94,2499,80,2699
+2027-02,1,Premium Wireless Headphones,Electronics,Long-term,117,90.61,2499,80,2699
+2027-03,1,Premium Wireless Headphones,Electronics,Long-term,137,92.29,2499,80,2699
+2027-04,1,Premium Wireless Headphones,Electronics,Long-term,127,90.11,2499,80,2699
+2027-05,1,Premium Wireless Headphones,Electronics,Long-term,137,91.93,2499,80,2699
+2027-06,1,Premium Wireless Headphones,Electronics,Long-term,144,93.89,2499,80,2699
+2026-07,2,Smart Watch Pro,Smart Devices,Short-term,90,93.69,3999,55,3899
+2026-08,2,Smart Watch Pro,Smart Devices,Short-term,89,93.73,3999,55,3899
+2026-09,2,Smart Watch Pro,Smart Devices,Short-term,89,93.02,3999,55,3899
+2026-10,2,Smart Watch Pro,Smart Devices,Medium-term,94,92.87,3999,55,3899
+2026-11,2,Smart Watch Pro,Smart Devices,Medium-term,95,93.82,3999,55,3899
+2026-12,2,Smart Watch Pro,Smart Devices,Medium-term,97,92.95,3999,55,3899
+2027-01,2,Smart Watch Pro,Smart Devices,Long-term,89,89.6,3999,55,3899
+2027-02,2,Smart Watch Pro,Smart Devices,Long-term,89,93.2,3999,55,3899
+2027-03,2,Smart Watch Pro,Smart Devices,Long-term,88,93.75,3999,55,3899
+2027-04,2,Smart Watch Pro,Smart Devices,Long-term,89,93.83,3999,55,3899
+2027-05,2,Smart Watch Pro,Smart Devices,Long-term,89,93.81,3999,55,3899
+2027-06,2,Smart Watch Pro,Smart Devices,Long-term,89,93.54,3999,55,3899
+2026-07,3,Premium Running Shoes,Fashion,Short-term,151,90.95,2999,40,3199
+2026-08,3,Premium Running Shoes,Fashion,Short-term,144,93.25,2999,40,3199
+2026-09,3,Premium Running Shoes,Fashion,Short-term,146,92.22,2999,40,3199
+2026-10,3,Premium Running Shoes,Fashion,Medium-term,158,92.84,2999,40,3199
+2026-11,3,Premium Running Shoes,Fashion,Medium-term,163,91.11,2999,40,3199
+2026-12,3,Premium Running Shoes,Fashion,Medium-term,169,88.97,2999,40,3199
+2027-01,3,Premium Running Shoes,Fashion,Long-term,149,85.79,2999,40,3199
+2027-02,3,Premium Running Shoes,Fashion,Long-term,134,89.68,2999,40,3199
+2027-03,3,Premium Running Shoes,Fashion,Long-term,143,94.3,2999,40,3199
+2027-04,3,Premium Running Shoes,Fashion,Long-term,150,96.57,2999,40,3199
+2027-05,3,Premium Running Shoes,Fashion,Long-term,150,96.12,2999,40,3199
+2027-06,3,Premium Running Shoes,Fashion,Long-term,147,94.7,2999,40,3199
+2026-07,4,Modern Coffee Maker,Home Appliances,Short-term,74,92.86,4599,70,4499
+2026-08,4,Modern Coffee Maker,Home Appliances,Short-term,73,93.53,4599,70,4499
+2026-09,4,Modern Coffee Maker,Home Appliances,Short-term,73,92.91,4599,70,4499
+2026-10,4,Modern Coffee Maker,Home Appliances,Medium-term,76,92.94,4599,70,4499
+2026-11,4,Modern Coffee Maker,Home Appliances,Medium-term,76,93.31,4599,70,4499
+2026-12,4,Modern Coffee Maker,Home Appliances,Medium-term,77,93.64,4599,70,4499
+2027-01,4,Modern Coffee Maker,Home Appliances,Long-term,65,89.62,4599,70,4499
+2027-02,4,Modern Coffee Maker,Home Appliances,Long-term,64,92.84,4599,70,4499
+2027-03,4,Modern Coffee Maker,Home Appliances,Long-term,72,91.56,4599,70,4499
+2027-04,4,Modern Coffee Maker,Home Appliances,Long-term,73,93.01,4599,70,4499
+2027-05,4,Modern Coffee Maker,Home Appliances,Long-term,74,93.36,4599,70,4499
+2027-06,4,Modern Coffee Maker,Home Appliances,Long-term,73,93.35,4599,70,4499
+2026-07,5,Ergonomic Office Chair,Furniture,Short-term,48,93.48,8999,25,9499
+2026-08,5,Ergonomic Office Chair,Furniture,Short-term,47,92.54,8999,25,9499
+2026-09,5,Ergonomic Office Chair,Furniture,Short-term,48,92.67,8999,25,9499
+2026-10,5,Ergonomic Office Chair,Furniture,Medium-term,49,92.74,8999,25,9499
+2026-11,5,Ergonomic Office Chair,Furniture,Medium-term,49,92.72,8999,25,9499
+2026-12,5,Ergonomic Office Chair,Furniture,Medium-term,49,92.56,8999,25,9499
+2027-01,5,Ergonomic Office Chair,Furniture,Long-term,47,93.38,8999,25,9499
+2027-02,5,Ergonomic Office Chair,Furniture,Long-term,48,93.48,8999,25,9499
+2027-03,5,Ergonomic Office Chair,Furniture,Long-term,48,94.32,8999,25,9499
+2027-04,5,Ergonomic Office Chair,Furniture,Long-term,48,94.34,8999,25,9499
+2027-05,5,Ergonomic Office Chair,Furniture,Long-term,48,94.85,8999,25,9499
+2027-06,5,Ergonomic Office Chair,Furniture,Long-term,48,94.27,8999,25,9499
+2026-07,6,Premium Travel Backpack,Accessories,Short-term,111,91.93,1999,90,1899
+2026-08,6,Premium Travel Backpack,Accessories,Short-term,110,92.25,1999,90,1899
+2026-09,6,Premium Travel Backpack,Accessories,Short-term,114,92.16,1999,90,1899
+2026-10,6,Premium Travel Backpack,Accessories,Medium-term,122,90.38,1999,90,1899
+2026-11,6,Premium Travel Backpack,Accessories,Medium-term,126,90.45,1999,90,1899
+2026-12,6,Premium Travel Backpack,Accessories,Medium-term,131,92.75,1999,90,1899
+2027-01,6,Premium Travel Backpack,Accessories,Long-term,112,90.49,1999,90,1899
+2027-02,6,Premium Travel Backpack,Accessories,Long-term,108,88.64,1999,90,1899
+2027-03,6,Premium Travel Backpack,Accessories,Long-term,113,91.27,1999,90,1899
+2027-04,6,Premium Travel Backpack,Accessories,Long-term,116,90.72,1999,90,1899
+2027-05,6,Premium Travel Backpack,Accessories,Long-term,119,90.73,1999,90,1899
+2027-06,6,Premium Travel Backpack,Accessories,Long-term,122,92.21,1999,90,1899
+2026-07,7,Bluetooth Speaker,Electronics,Short-term,122,91.76,1799,75,1899
+2026-08,7,Bluetooth Speaker,Electronics,Short-term,129,90.95,1799,75,1899
+2026-09,7,Bluetooth Speaker,Electronics,Short-term,136,92.09,1799,75,1899
+2026-10,7,Bluetooth Speaker,Electronics,Medium-term,144,93.45,1799,75,1899
+2026-11,7,Bluetooth Speaker,Electronics,Medium-term,150,92.37,1799,75,1899
+2026-12,7,Bluetooth Speaker,Electronics,Medium-term,153,90.97,1799,75,1899
+2027-01,7,Bluetooth Speaker,Electronics,Long-term,126,87.51,1799,75,1899
+2027-02,7,Bluetooth Speaker,Electronics,Long-term,119,90.77,1799,75,1899
+2027-03,7,Bluetooth Speaker,Electronics,Long-term,143,93.88,1799,75,1899
+2027-04,7,Bluetooth Speaker,Electronics,Long-term,143,93.12,1799,75,1899
+2027-05,7,Bluetooth Speaker,Electronics,Long-term,148,94.63,1799,75,1899
+2027-06,7,Bluetooth Speaker,Electronics,Long-term,148,94.07,1799,75,1899
+2026-07,8,Gaming Mouse,Electronics,Short-term,194,92.91,1299,120,1399
+2026-08,8,Gaming Mouse,Electronics,Short-term,196,93.72,1299,120,1399
+2026-09,8,Gaming Mouse,Electronics,Short-term,197,92.9,1299,120,1399
+2026-10,8,Gaming Mouse,Electronics,Medium-term,216,92.3,1299,120,1399
+2026-11,8,Gaming Mouse,Electronics,Medium-term,211,94.26,1299,120,1399
+2026-12,8,Gaming Mouse,Electronics,Medium-term,213,93.71,1299,120,1399
+2027-01,8,Gaming Mouse,Electronics,Long-term,189,90.48,1299,120,1399
+2027-02,8,Gaming Mouse,Electronics,Long-term,197,92.53,1299,120,1399
+2027-03,8,Gaming Mouse,Electronics,Long-term,194,92.44,1299,120,1399
+2027-04,8,Gaming Mouse,Electronics,Long-term,198,93.84,1299,120,1399
+2027-05,8,Gaming Mouse,Electronics,Long-term,197,93.75,1299,120,1399
+2027-06,8,Gaming Mouse,Electronics,Long-term,197,94.05,1299,120,1399
+2026-07,9,Mechanical Keyboard,Electronics,Short-term,94,90.17,3499,60,3599
+2026-08,9,Mechanical Keyboard,Electronics,Short-term,91,94.01,3499,60,3599
+2026-09,9,Mechanical Keyboard,Electronics,Short-term,91,91.96,3499,60,3599
+2026-10,9,Mechanical Keyboard,Electronics,Medium-term,95,93.27,3499,60,3599
+2026-11,9,Mechanical Keyboard,Electronics,Medium-term,97,93.42,3499,60,3599
+2026-12,9,Mechanical Keyboard,Electronics,Medium-term,99,92.31,3499,60,3599
+2027-01,9,Mechanical Keyboard,Electronics,Long-term,93,90.06,3499,60,3599
+2027-02,9,Mechanical Keyboard,Electronics,Long-term,92,92.18,3499,60,3599
+2027-03,9,Mechanical Keyboard,Electronics,Long-term,90,92.33,3499,60,3599
+2027-04,9,Mechanical Keyboard,Electronics,Long-term,90,93.89,3499,60,3599
+2027-05,9,Mechanical Keyboard,Electronics,Long-term,90,93.93,3499,60,3599
+2027-06,9,Mechanical Keyboard,Electronics,Long-term,90,93.79,3499,60,3599
+2026-07,10,Laptop Backpack,Accessories,Short-term,115,90.76,1499,95,1599
+2026-08,10,Laptop Backpack,Accessories,Short-term,116,91.21,1499,95,1599
+2026-09,10,Laptop Backpack,Accessories,Short-term,117,90.77,1499,95,1599
+2026-10,10,Laptop Backpack,Accessories,Medium-term,123,89.23,1499,95,1599
+2026-11,10,Laptop Backpack,Accessories,Medium-term,125,89.88,1499,95,1599
+2026-12,10,Laptop Backpack,Accessories,Medium-term,128,89.74,1499,95,1599
+2027-01,10,Laptop Backpack,Accessories,Long-term,108,90.0,1499,95,1599
+2027-02,10,Laptop Backpack,Accessories,Long-term,106,89.76,1499,95,1599
+2027-03,10,Laptop Backpack,Accessories,Long-term,111,90.82,1499,95,1599
+2027-04,10,Laptop Backpack,Accessories,Long-term,110,92.48,1499,95,1599
+2027-05,10,Laptop Backpack,Accessories,Long-term,113,91.97,1499,95,1599
+2027-06,10,Laptop Backpack,Accessories,Long-term,115,90.7,1499,95,1599
+2026-07,11,Air Fryer,Home Appliances,Short-term,76,93.86,5999,50,6199
+2026-08,11,Air Fryer,Home Appliances,Short-term,76,93.93,5999,50,6199
+2026-09,11,Air Fryer,Home Appliances,Short-term,76,93.84,5999,50,6199
+2026-10,11,Air Fryer,Home Appliances,Medium-term,78,94.19,5999,50,6199
+2026-11,11,Air Fryer,Home Appliances,Medium-term,78,94.05,5999,50,6199
+2026-12,11,Air Fryer,Home Appliances,Medium-term,78,93.8,5999,50,6199
+2027-01,11,Air Fryer,Home Appliances,Long-term,66,90.87,5999,50,6199
+2027-02,11,Air Fryer,Home Appliances,Long-term,65,93.3,5999,50,6199
+2027-03,11,Air Fryer,Home Appliances,Long-term,74,93.01,5999,50,6199
+2027-04,11,Air Fryer,Home Appliances,Long-term,76,95.75,5999,50,6199
+2027-05,11,Air Fryer,Home Appliances,Long-term,74,95.84,5999,50,6199
+2027-06,11,Air Fryer,Home Appliances,Long-term,75,94.96,5999,50,6199
+2026-07,12,LED Desk Lamp,Furniture,Short-term,147,90.53,999,130,1099
+2026-08,12,LED Desk Lamp,Furniture,Short-term,142,91.49,999,130,1099
+2026-09,12,LED Desk Lamp,Furniture,Short-term,145,91.45,999,130,1099
+2026-10,12,LED Desk Lamp,Furniture,Medium-term,155,91.5,999,130,1099
+2026-11,12,LED Desk Lamp,Furniture,Medium-term,158,89.33,999,130,1099
+2026-12,12,LED Desk Lamp,Furniture,Medium-term,167,87.6,999,130,1099
+2027-01,12,LED Desk Lamp,Furniture,Long-term,152,83.62,999,130,1099
+2027-02,12,LED Desk Lamp,Furniture,Long-term,132,90.99,999,130,1099
+2027-03,12,LED Desk Lamp,Furniture,Long-term,142,94.25,999,130,1099
+2027-04,12,LED Desk Lamp,Furniture,Long-term,149,96.49,999,130,1099
+2027-05,12,LED Desk Lamp,Furniture,Long-term,149,95.74,999,130,1099
+2027-06,12,LED Desk Lamp,Furniture,Long-term,146,93.86,999,130,1099
+2026-07,13,Yoga Mat,Sports,Short-term,197,94.22,799,140,899
+2026-08,13,Yoga Mat,Sports,Short-term,190,93.03,799,140,899
+2026-09,13,Yoga Mat,Sports,Short-term,198,93.49,799,140,899
+2026-10,13,Yoga Mat,Sports,Medium-term,210,90.86,799,140,899
+2026-11,13,Yoga Mat,Sports,Medium-term,210,92.87,799,140,899
+2026-12,13,Yoga Mat,Sports,Medium-term,210,93.32,799,140,899
+2027-01,13,Yoga Mat,Sports,Long-term,186,90.19,799,140,899
+2027-02,13,Yoga Mat,Sports,Long-term,193,92.1,799,140,899
+2027-03,13,Yoga Mat,Sports,Long-term,190,91.92,799,140,899
+2027-04,13,Yoga Mat,Sports,Long-term,200,94.17,799,140,899
+2027-05,13,Yoga Mat,Sports,Long-term,191,93.32,799,140,899
+2027-06,13,Yoga Mat,Sports,Long-term,198,94.31,799,140,899
+2026-07,14,Cricket Bat,Sports,Short-term,80,90.9,2499,65,2599
+2026-08,14,Cricket Bat,Sports,Short-term,81,90.7,2499,65,2599
+2026-09,14,Cricket Bat,Sports,Short-term,83,90.06,2499,65,2599
+2026-10,14,Cricket Bat,Sports,Medium-term,91,88.13,2499,65,2599
+2026-11,14,Cricket Bat,Sports,Medium-term,94,89.48,2499,65,2599
+2026-12,14,Cricket Bat,Sports,Medium-term,95,90.38,2499,65,2599
+2027-01,14,Cricket Bat,Sports,Long-term,91,88.46,2499,65,2599
+2027-02,14,Cricket Bat,Sports,Long-term,90,89.89,2499,65,2599
+2027-03,14,Cricket Bat,Sports,Long-term,90,90.54,2499,65,2599
+2027-04,14,Cricket Bat,Sports,Long-term,91,90.59,2499,65,2599
+2027-05,14,Cricket Bat,Sports,Long-term,91,90.54,2499,65,2599
+2027-06,14,Cricket Bat,Sports,Long-term,91,90.64,2499,65,2599
+2026-07,15,Wireless Charger,Electronics,Short-term,141,92.58,899,110,999
+2026-08,15,Wireless Charger,Electronics,Short-term,141,92.46,899,110,999
+2026-09,15,Wireless Charger,Electronics,Short-term,142,91.46,899,110,999
+2026-10,15,Wireless Charger,Electronics,Medium-term,149,89.73,899,110,999
+2026-11,15,Wireless Charger,Electronics,Medium-term,147,88.86,899,110,999
+2026-12,15,Wireless Charger,Electronics,Medium-term,147,88.48,899,110,999
+2027-01,15,Wireless Charger,Electronics,Long-term,123,92.5,899,110,999
+2027-02,15,Wireless Charger,Electronics,Long-term,121,91.62,899,110,999
+2027-03,15,Wireless Charger,Electronics,Long-term,140,94.18,899,110,999
+2027-04,15,Wireless Charger,Electronics,Long-term,137,92.69,899,110,999
+2027-05,15,Wireless Charger,Electronics,Long-term,142,95.03,899,110,999
+2027-06,15,Wireless Charger,Electronics,Long-term,143,93.49,899,110,999
+2026-07,16,Fitness Band,Smart Devices,Short-term,126,90.52,2299,85,2399
+2026-08,16,Fitness Band,Smart Devices,Short-term,137,92.88,2299,85,2399
+2026-09,16,Fitness Band,Smart Devices,Short-term,141,94.02,2299,85,2399
+2026-10,16,Fitness Band,Smart Devices,Medium-term,149,92.71,2299,85,2399
+2026-11,16,Fitness Band,Smart Devices,Medium-term,152,90.93,2299,85,2399
+2026-12,16,Fitness Band,Smart Devices,Medium-term,151,89.96,2299,85,2399
+2027-01,16,Fitness Band,Smart Devices,Long-term,122,90.85,2299,85,2399
+2027-02,16,Fitness Band,Smart Devices,Long-term,118,90.44,2299,85,2399
+2027-03,16,Fitness Band,Smart Devices,Long-term,141,93.88,2299,85,2399
+2027-04,16,Fitness Band,Smart Devices,Long-term,139,92.8,2299,85,2399
+2027-05,16,Fitness Band,Smart Devices,Long-term,144,95.18,2299,85,2399
+2027-06,16,Fitness Band,Smart Devices,Long-term,148,94.09,2299,85,2399
+2026-07,17,Portable SSD,Electronics,Short-term,71,93.32,5499,42,5699
+2026-08,17,Portable SSD,Electronics,Short-term,71,92.73,5499,42,5699
+2026-09,17,Portable SSD,Electronics,Short-term,72,93.23,5499,42,5699
+2026-10,17,Portable SSD,Electronics,Medium-term,74,93.57,5499,42,5699
+2026-11,17,Portable SSD,Electronics,Medium-term,74,94.2,5499,42,5699
+2026-12,17,Portable SSD,Electronics,Medium-term,74,93.9,5499,42,5699
+2027-01,17,Portable SSD,Electronics,Long-term,61,92.33,5499,42,5699
+2027-02,17,Portable SSD,Electronics,Long-term,62,92.89,5499,42,5699
+2027-03,17,Portable SSD,Electronics,Long-term,66,92.3,5499,42,5699
+2027-04,17,Portable SSD,Electronics,Long-term,68,95.11,5499,42,5699
+2027-05,17,Portable SSD,Electronics,Long-term,68,93.11,5499,42,5699
+2027-06,17,Portable SSD,Electronics,Long-term,71,92.76,5499,42,5699
+2026-07,18,Water Bottle,Accessories,Short-term,108,91.96,499,180,549
+2026-08,18,Water Bottle,Accessories,Short-term,114,92.02,499,180,549
+2026-09,18,Water Bottle,Accessories,Short-term,112,90.2,499,180,549
+2026-10,18,Water Bottle,Accessories,Medium-term,118,88.84,499,180,549
+2026-11,18,Water Bottle,Accessories,Medium-term,121,88.29,499,180,549
+2026-12,18,Water Bottle,Accessories,Medium-term,124,88.62,499,180,549
+2027-01,18,Water Bottle,Accessories,Long-term,109,87.21,499,180,549
+2027-02,18,Water Bottle,Accessories,Long-term,106,88.6,499,180,549
+2027-03,18,Water Bottle,Accessories,Long-term,112,90.23,499,180,549
+2027-04,18,Water Bottle,Accessories,Long-term,111,91.69,499,180,549
+2027-05,18,Water Bottle,Accessories,Long-term,113,91.07,499,180,549
+2027-06,18,Water Bottle,Accessories,Long-term,115,90.21,499,180,549
+2026-07,19,Office Table,Furniture,Short-term,26,93.38,12999,18,13299
+2026-08,19,Office Table,Furniture,Short-term,26,92.18,12999,18,13299
+2026-09,19,Office Table,Furniture,Short-term,26,91.85,12999,18,13299
+2026-10,19,Office Table,Furniture,Medium-term,28,90.51,12999,18,13299
+2026-11,19,Office Table,Furniture,Medium-term,29,91.53,12999,18,13299
+2026-12,19,Office Table,Furniture,Medium-term,28,91.47,12999,18,13299
+2027-01,19,Office Table,Furniture,Long-term,25,90.37,12999,18,13299
+2027-02,19,Office Table,Furniture,Long-term,25,91.34,12999,18,13299
+2027-03,19,Office Table,Furniture,Long-term,26,93.38,12999,18,13299
+2027-04,19,Office Table,Furniture,Long-term,26,93.62,12999,18,13299
+2027-05,19,Office Table,Furniture,Long-term,26,92.56,12999,18,13299
+2027-06,19,Office Table,Furniture,Long-term,26,92.37,12999,18,13299
+2026-07,20,Noise Cancelling Earbuds,Electronics,Short-term,147,93.06,4999,58,5199
+2026-08,20,Noise Cancelling Earbuds,Electronics,Short-term,147,93.54,4999,58,5199
+2026-09,20,Noise Cancelling Earbuds,Electronics,Short-term,148,92.6,4999,58,5199
+2026-10,20,Noise Cancelling Earbuds,Electronics,Medium-term,156,91.63,4999,58,5199
+2026-11,20,Noise Cancelling Earbuds,Electronics,Medium-term,159,90.79,4999,58,5199
+2026-12,20,Noise Cancelling Earbuds,Electronics,Medium-term,164,90.7,4999,58,5199
+2027-01,20,Noise Cancelling Earbuds,Electronics,Long-term,143,88.85,4999,58,5199
+2027-02,20,Noise Cancelling Earbuds,Electronics,Long-term,127,89.3,4999,58,5199
+2027-03,20,Noise Cancelling Earbuds,Electronics,Long-term,145,94.3,4999,58,5199
+2027-04,20,Noise Cancelling Earbuds,Electronics,Long-term,148,95.51,4999,58,5199
+2027-05,20,Noise Cancelling Earbuds,Electronics,Long-term,150,94.8,4999,58,5199
+2027-06,20,Noise Cancelling Earbuds,Electronics,Long-term,149,94.59,4999,58,5199
+2026-07,21,Digital Camera,Electronics,Short-term,15,96.26,45999,12,46999
+2026-08,21,Digital Camera,Electronics,Short-term,15,96.3,45999,12,46999
+2026-09,21,Digital Camera,Electronics,Short-term,15,96.32,45999,12,46999
+2026-10,21,Digital Camera,Electronics,Medium-term,15,96.37,45999,12,46999
+2026-11,21,Digital Camera,Electronics,Medium-term,16,96.86,45999,12,46999
+2026-12,21,Digital Camera,Electronics,Medium-term,15,96.14,45999,12,46999
+2027-01,21,Digital Camera,Electronics,Long-term,15,96.33,45999,12,46999
+2027-02,21,Digital Camera,Electronics,Long-term,15,96.15,45999,12,46999
+2027-03,21,Digital Camera,Electronics,Long-term,15,96.22,45999,12,46999
+2027-04,21,Digital Camera,Electronics,Long-term,15,96.16,45999,12,46999
+2027-05,21,Digital Camera,Electronics,Long-term,15,96.56,45999,12,46999
+2027-06,21,Digital Camera,Electronics,Long-term,15,96.44,45999,12,46999
+2026-07,22,Smart TV 43 Inch,Electronics,Short-term,28,91.49,32999,20,33999
+2026-08,22,Smart TV 43 Inch,Electronics,Short-term,28,91.58,32999,20,33999
+2026-09,22,Smart TV 43 Inch,Electronics,Short-term,28,91.46,32999,20,33999
+2026-10,22,Smart TV 43 Inch,Electronics,Medium-term,30,91.24,32999,20,33999
+2026-11,22,Smart TV 43 Inch,Electronics,Medium-term,30,93.99,32999,20,33999
+2026-12,22,Smart TV 43 Inch,Electronics,Medium-term,30,93.9,32999,20,33999
+2027-01,22,Smart TV 43 Inch,Electronics,Long-term,28,90.73,32999,20,33999
+2027-02,22,Smart TV 43 Inch,Electronics,Long-term,27,89.93,32999,20,33999
+2027-03,22,Smart TV 43 Inch,Electronics,Long-term,27,90.96,32999,20,33999
+2027-04,22,Smart TV 43 Inch,Electronics,Long-term,28,92.04,32999,20,33999
+2027-05,22,Smart TV 43 Inch,Electronics,Long-term,28,91.64,32999,20,33999
+2027-06,22,Smart TV 43 Inch,Electronics,Long-term,28,91.57,32999,20,33999
+2026-07,23,Mixer Grinder,Home Appliances,Short-term,63,89.96,3499,60,3599
+2026-08,23,Mixer Grinder,Home Appliances,Short-term,61,91.74,3499,60,3599
+2026-09,23,Mixer Grinder,Home Appliances,Short-term,62,92.03,3499,60,3599
+2026-10,23,Mixer Grinder,Home Appliances,Medium-term,64,92.12,3499,60,3599
+2026-11,23,Mixer Grinder,Home Appliances,Medium-term,66,91.03,3499,60,3599
+2026-12,23,Mixer Grinder,Home Appliances,Medium-term,67,90.92,3499,60,3599
+2027-01,23,Mixer Grinder,Home Appliances,Long-term,61,91.78,3499,60,3599
+2027-02,23,Mixer Grinder,Home Appliances,Long-term,59,91.74,3499,60,3599
+2027-03,23,Mixer Grinder,Home Appliances,Long-term,61,91.87,3499,60,3599
+2027-04,23,Mixer Grinder,Home Appliances,Long-term,61,91.85,3499,60,3599
+2027-05,23,Mixer Grinder,Home Appliances,Long-term,61,91.81,3499,60,3599
+2027-06,23,Mixer Grinder,Home Appliances,Long-term,61,91.42,3499,60,3599
+2026-07,24,Electric Kettle,Home Appliances,Short-term,117,93.07,1599,92,1699
+2026-08,24,Electric Kettle,Home Appliances,Short-term,118,91.2,1599,92,1699
+2026-09,24,Electric Kettle,Home Appliances,Short-term,120,92.48,1599,92,1699
+2026-10,24,Electric Kettle,Home Appliances,Medium-term,127,91.67,1599,92,1699
+2026-11,24,Electric Kettle,Home Appliances,Medium-term,130,92.33,1599,92,1699
+2026-12,24,Electric Kettle,Home Appliances,Medium-term,134,93.05,1599,92,1699
+2027-01,24,Electric Kettle,Home Appliances,Long-term,114,90.76,1599,92,1699
+2027-02,24,Electric Kettle,Home Appliances,Long-term,107,90.72,1599,92,1699
+2027-03,24,Electric Kettle,Home Appliances,Long-term,115,91.71,1599,92,1699
+2027-04,24,Electric Kettle,Home Appliances,Long-term,116,92.01,1599,92,1699
+2027-05,24,Electric Kettle,Home Appliances,Long-term,119,92.2,1599,92,1699
+2027-06,24,Electric Kettle,Home Appliances,Long-term,120,92.42,1599,92,1699
+2026-07,25,Microwave Oven,Home Appliances,Short-term,37,70.61,8999,28,9299
+2026-08,25,Microwave Oven,Home Appliances,Short-term,40,73.09,8999,28,9299
+2026-09,25,Microwave Oven,Home Appliances,Short-term,45,80.32,8999,28,9299
+2026-10,25,Microwave Oven,Home Appliances,Medium-term,48,85.48,8999,28,9299
+2026-11,25,Microwave Oven,Home Appliances,Medium-term,47,85.63,8999,28,9299
+2026-12,25,Microwave Oven,Home Appliances,Medium-term,46,85.15,8999,28,9299
+2027-01,25,Microwave Oven,Home Appliances,Long-term,45,84.6,8999,28,9299
+2027-02,25,Microwave Oven,Home Appliances,Long-term,45,84.54,8999,28,9299
+2027-03,25,Microwave Oven,Home Appliances,Long-term,46,84.97,8999,28,9299
+2027-04,25,Microwave Oven,Home Appliances,Long-term,46,85.25,8999,28,9299
+2027-05,25,Microwave Oven,Home Appliances,Long-term,46,85.44,8999,28,9299
+2027-06,25,Microwave Oven,Home Appliances,Long-term,46,85.04,8999,28,9299
+2026-07,26,Casual Shoes,Fashion,Short-term,118,91.55,2199,88,2299
+2026-08,26,Casual Shoes,Fashion,Short-term,120,91.48,2199,88,2299
+2026-09,26,Casual Shoes,Fashion,Short-term,120,92.66,2199,88,2299
+2026-10,26,Casual Shoes,Fashion,Medium-term,131,93.1,2199,88,2299
+2026-11,26,Casual Shoes,Fashion,Medium-term,134,94.5,2199,88,2299
+2026-12,26,Casual Shoes,Fashion,Medium-term,139,94.14,2199,88,2299
+2027-01,26,Casual Shoes,Fashion,Long-term,115,90.35,2199,88,2299
+2027-02,26,Casual Shoes,Fashion,Long-term,113,91.26,2199,88,2299
+2027-03,26,Casual Shoes,Fashion,Long-term,121,91.24,2199,88,2299
+2027-04,26,Casual Shoes,Fashion,Long-term,119,91.8,2199,88,2299
+2027-05,26,Casual Shoes,Fashion,Long-term,123,93.81,2199,88,2299
+2027-06,26,Casual Shoes,Fashion,Long-term,122,93.81,2199,88,2299
+2026-07,27,Leather Wallet,Fashion,Short-term,95,91.94,999,145,1099
+2026-08,27,Leather Wallet,Fashion,Short-term,98,92.8,999,145,1099
+2026-09,27,Leather Wallet,Fashion,Short-term,102,93.72,999,145,1099
+2026-10,27,Leather Wallet,Fashion,Medium-term,107,93.8,999,145,1099
+2026-11,27,Leather Wallet,Fashion,Medium-term,111,94.41,999,145,1099
+2026-12,27,Leather Wallet,Fashion,Medium-term,112,92.98,999,145,1099
+2027-01,27,Leather Wallet,Fashion,Long-term,102,89.63,999,145,1099
+2027-02,27,Leather Wallet,Fashion,Long-term,102,89.81,999,145,1099
+2027-03,27,Leather Wallet,Fashion,Long-term,108,92.26,999,145,1099
+2027-04,27,Leather Wallet,Fashion,Long-term,111,93.6,999,145,1099
+2027-05,27,Leather Wallet,Fashion,Long-term,111,92.48,999,145,1099
+2027-06,27,Leather Wallet,Fashion,Long-term,113,91.74,999,145,1099
+2026-07,28,Men's Jacket,Fashion,Short-term,86,89.16,3499,54,3599
+2026-08,28,Men's Jacket,Fashion,Short-term,82,89.03,3499,54,3599
+2026-09,28,Men's Jacket,Fashion,Short-term,90,91.49,3499,54,3599
+2026-10,28,Men's Jacket,Fashion,Medium-term,93,90.68,3499,54,3599
+2026-11,28,Men's Jacket,Fashion,Medium-term,95,91.89,3499,54,3599
+2026-12,28,Men's Jacket,Fashion,Medium-term,96,91.66,3499,54,3599
+2027-01,28,Men's Jacket,Fashion,Long-term,90,89.43,3499,54,3599
+2027-02,28,Men's Jacket,Fashion,Long-term,88,91.59,3499,54,3599
+2027-03,28,Men's Jacket,Fashion,Long-term,88,91.77,3499,54,3599
+2027-04,28,Men's Jacket,Fashion,Long-term,89,91.88,3499,54,3599
+2027-05,28,Men's Jacket,Fashion,Long-term,89,91.88,3499,54,3599
+2027-06,28,Men's Jacket,Fashion,Long-term,89,91.79,3499,54,3599
+2026-07,29,Sunglasses,Fashion,Short-term,111,92.07,1799,77,1899
+2026-08,29,Sunglasses,Fashion,Short-term,112,92.26,1799,77,1899
+2026-09,29,Sunglasses,Fashion,Short-term,118,92.48,1799,77,1899
+2026-10,29,Sunglasses,Fashion,Medium-term,127,92.26,1799,77,1899
+2026-11,29,Sunglasses,Fashion,Medium-term,129,92.78,1799,77,1899
+2026-12,29,Sunglasses,Fashion,Medium-term,133,93.28,1799,77,1899
+2027-01,29,Sunglasses,Fashion,Long-term,113,91.18,1799,77,1899
+2027-02,29,Sunglasses,Fashion,Long-term,106,90.57,1799,77,1899
+2027-03,29,Sunglasses,Fashion,Long-term,114,92.31,1799,77,1899
+2027-04,29,Sunglasses,Fashion,Long-term,118,92.17,1799,77,1899
+2027-05,29,Sunglasses,Fashion,Long-term,122,91.92,1799,77,1899
+2027-06,29,Sunglasses,Fashion,Long-term,122,92.36,1799,77,1899
+2026-07,30,Travel Suitcase,Accessories,Short-term,55,81.15,4999,48,5199
+2026-08,30,Travel Suitcase,Accessories,Short-term,59,90.74,4999,48,5199
+2026-09,30,Travel Suitcase,Accessories,Short-term,59,91.14,4999,48,5199
+2026-10,30,Travel Suitcase,Accessories,Medium-term,63,91.11,4999,48,5199
+2026-11,30,Travel Suitcase,Accessories,Medium-term,65,92.96,4999,48,5199
+2026-12,30,Travel Suitcase,Accessories,Medium-term,68,92.8,4999,48,5199
+2027-01,30,Travel Suitcase,Accessories,Long-term,61,92.59,4999,48,5199
+2027-02,30,Travel Suitcase,Accessories,Long-term,61,92.76,4999,48,5199
+2027-03,30,Travel Suitcase,Accessories,Long-term,63,93.08,4999,48,5199
+2027-04,30,Travel Suitcase,Accessories,Long-term,63,93.26,4999,48,5199
+2027-05,30,Travel Suitcase,Accessories,Long-term,63,93.0,4999,48,5199
+2027-06,30,Travel Suitcase,Accessories,Long-term,64,92.83,4999,48,5199

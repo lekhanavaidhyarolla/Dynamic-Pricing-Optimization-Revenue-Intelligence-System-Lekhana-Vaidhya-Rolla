@@ -1,0 +1,31 @@
+id,name,category,currentPrice,stock,competitorPrice
+1,Premium Wireless Headphones,Electronics,2499,80,2699
+2,Smart Watch Pro,Smart Devices,3999,55,3899
+3,Premium Running Shoes,Fashion,2999,40,3199
+4,Modern Coffee Maker,Home Appliances,4599,70,4499
+5,Ergonomic Office Chair,Furniture,8999,25,9499
+6,Premium Travel Backpack,Accessories,1999,90,1899
+7,Bluetooth Speaker,Electronics,1799,75,1899
+8,Gaming Mouse,Electronics,1299,120,1399
+9,Mechanical Keyboard,Electronics,3499,60,3599
+10,Laptop Backpack,Accessories,1499,95,1599
+11,Air Fryer,Home Appliances,5999,50,6199
+12,LED Desk Lamp,Furniture,999,130,1099
+13,Yoga Mat,Sports,799,140,899
+14,Cricket Bat,Sports,2499,65,2599
+15,Wireless Charger,Electronics,899,110,999
+16,Fitness Band,Smart Devices,2299,85,2399
+17,Portable SSD,Electronics,5499,42,5699
+18,Water Bottle,Accessories,499,180,549
+19,Office Table,Furniture,12999,18,13299
+20,Noise Cancelling Earbuds,Electronics,4999,58,5199
+21,Digital Camera,Electronics,45999,12,46999
+22,Smart TV 43 Inch,Electronics,32999,20,33999
+23,Mixer Grinder,Home Appliances,3499,60,3599
+24,Electric Kettle,Home Appliances,1599,92,1699
+25,Microwave Oven,Home Appliances,8999,28,9299
+26,Casual Shoes,Fashion,2199,88,2299
+27,Leather Wallet,Fashion,999,145,1099
+28,Men's Jacket,Fashion,3499,54,3599
+29,Sunglasses,Fashion,1799,77,1899
+30,Travel Suitcase,Accessories,4999,48,5199
